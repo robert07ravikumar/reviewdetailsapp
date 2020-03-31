@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import Home from './screens/home';
 import * as Font from 'expo-font';
 import {AppLoading} from 'expo';
+import Navigator from './routes/homestack';
 
 
 const getFonts = () => Font.loadAsync({
@@ -9,7 +10,7 @@ const getFonts = () => Font.loadAsync({
     'nunito-bold' : require('./assets/fonts/Nunito-Bold.ttf')
   })
 
-  getFonts
+  
 
 export default function App() {
 
@@ -17,7 +18,7 @@ export default function App() {
 
   if(fontsLoaded){
     return (
-      <Home></Home>
+      <Navigator/>
     );
   }else{
     return(<AppLoading
