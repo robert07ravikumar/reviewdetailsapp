@@ -25,8 +25,6 @@ const HomeStack = createStackNavigator(screens,{
         headerStyle:{
             backgroundColor : '#eee',
             height:60,
-            
-        
         }
     }
 });

@@ -13,7 +13,7 @@ export default function Header({navigation,title}) {
         <View style={styles.header}>
             <MaterialIcons name='menu' onPress={openMenu} style={styles.icon}/>
             <View>
-    <Text style={styles.headerText}>{title}}</Text>
+                <Text style={styles.headerText}>{title}</Text>
             </View>
         </View>
     )
@@ -26,15 +26,17 @@ const styles= StyleSheet.create({
         flexDirection : 'row',
         alignItems : 'center',
         justifyContent: 'center',
-        backgroundColor : 'red'
+        //backgroundColor : 'red'
     },
     headerText:{
         fontWeight : 'bold',
         fontSize: 20,
         color: '#333',
         letterSpacing: 1,
+        left: 30
     },
     icon :{
-        position : 'absolute'
+        position : 'absolute',
+        left: 16
     }
 })
